@@ -3,58 +3,79 @@
 
 <head>
   <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beatlemania</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>The Beatles</h1>
-  <p>Site dedicado a homenager os Beatles!</p>
-  <h2>Integrantes</h2>
-
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/The_Fabs.JPG/250px-The_Fabs.JPG"
-    alt="integrandes dos beatles">
-  <hr>
-  <div>
-    <h2>As melhores músicas</h2>
-    <!-- UL - Unordened List -->
-    <!-- OL - Ordened List -->
-    <!-- LI - List Item -->
-
-    <!-- HEADER -->
-    <!-- MAIN -->
-    <!-- FOOTER -->
-
-    <ol>
-      <li>Hey Jude</li>
-      <li>Yesterday</li>
-      <li>Twist and Shout</li>
-      <li>Come Together</li>
-      <li>Revolution</li>
-    </ol>
+  <header>
+    <h1>The Beatles</h1>
+    <p>Site dedicado a homenager os Beatles!</p>
+  </header>
+  <nav>
+    <div>
+      <a href="#integrantes">Integrantes</a>
+      <a href="#musicas">Músicas</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#novidades">Novidades</a>
+  </nav>
   </div>
-  <hr>
-  <h2>Escute uma música</h2>
-  <!-- A - Anchor -->
-  <p>Para escutar a música Help!
-  <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gXqNL_RQTdU" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-  </div>
-  </p>
+  <main>
+    <div>
+      <h2 id="integrandes">Integrantes</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/The_Fabs.JPG/250px-The_Fabs.JPG"
+        alt="integrandes dos beatles">
+    </div>
 
-  <hr>
-  <div>
-    <h2>Receba novidades dos Beatles</h2>
-    <form>
-      <label for="email">Nos informe seu email: </label>
-      <input id="email" name="email" type="email">
-      <button id="botao" type="submit">Enviar</button>
-    </form>
-  </div>
+    <div>
+      <h2 id="musicas">As melhores músicas</h2>
+      <!-- UL - Unordened List -->
+      <!-- OL - Ordened List -->
+      <!-- LI - List Item -->
 
+      <!-- HEADER -->
+      <!-- MAIN -->
+      <!-- FOOTER -->
+
+      <ol>
+        <li>Hey Jude</li>
+        <li>Yesterday</li>
+        <li>Twist and Shout</li>
+        <li>Come Together</li>
+        <li>Revolution</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2 id="videos">Assista os vídeos</h2>
+      <!-- A - Anchor -->
+      <p>Para escutar a música Help!
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gXqNL_RQTdU" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+    </div>
+    </p>
+
+    <hr>
+    <div>
+      <h2 id="novidades">Receba novidades dos Beatles</h2>
+      <form>
+        <label for="email">Nos informe seu email: </label>
+        <input id="email" name="email" type="email">
+        <button id="botao" type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
   <br><br><br>
   <script>
     var botao = document.getElementById("botao");
